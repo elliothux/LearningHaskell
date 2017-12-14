@@ -36,6 +36,9 @@ main = do
     -- 函数调用的优先级最高
     print (succ 9 + max 5 4 + 1)        -- 16
     print ((succ 9) + (max 5 4) + 1)    -- 16
+    -- 如果某函数有两个参数，也可以中缀函数的形式调用
+    print (div 92 10)       -- 9
+    print (92 `div` 10)     -- 9
 
     print (doubleMe 10)                     -- 20
     print (doubleUs 10.25 20.25)            -- 61.0
