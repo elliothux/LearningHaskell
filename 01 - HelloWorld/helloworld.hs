@@ -37,10 +37,17 @@ main = do
     print (succ 9 + max 5 4 + 1)        -- 16
     print ((succ 9) + (max 5 4) + 1)    -- 16
 
+    print (doubleMe 10)                     -- 20
+    print (doubleUs 10.25 20.25)            -- 61.0
+    print (doubleSmallNumber 30)            -- 60
+    print (doubleSmallNumberAndPlusOne 30)  -- 61
 
 
 -- Function Declaration
 doubleMe x = x + x
 doubleUs x y = doubleMe x + doubleMe y
-
--- print doubleMe 10
+doubleSmallNumber x = if x > 100 then  x else x * 2
+-- Haskell 中的 If 语句是表达式
+doubleSmallNumberAndPlusOne x = (if x > 100 then x else x * 2) + 1
+-- 这是一个返回字符串的函数! 并且 conanO'Brien 不可修改
+conanO'Brien = "It's a-me, Conan O'Brien!"
