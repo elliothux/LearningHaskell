@@ -54,3 +54,6 @@ main = do
     -- sum 返回一个 List 中所有元素的和, product 返回一个 List 中所有元素的积
     print (sum [1, 2, 3, 4])        -- 10
     print (product [1, 2, 3, 4])    -- 24
+    -- elem 判断一个元素是否在包含于一个 List
+    print (elem 4 [1, 2, 3, 4])     -- True
+    print (4 `elem` [1, 2, 3, 4])   -- True
