@@ -35,7 +35,6 @@ main = do
 
 
 
-
 boomBangs xs = [if x < 10 then "BOOM!" else "BANG!" | x <- xs, odd x]
 length' xs = sum [1 | _ <- xs]
 removeNonUppercase str = [c | c <- str, c `elem` ['A' .. 'Z']]

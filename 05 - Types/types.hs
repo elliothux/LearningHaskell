@@ -1,4 +1,31 @@
 
+-- Basic Types
+
+-- Int 表示整数，范围是 -2147483648 ~ -2147483648 (32 位)
+addThree :: Int -> Int -> Int -> Int
+addThree x y z = x + y + z
+
+-- Integer 也表示整数，但它是无界的, 其效率不如 Int
+factorial :: Integer -> Integer
+factorial n = product [1 .. n]
+
+-- Float 表示单精度的浮点数
+circumference :: Float -> Float
+circumference r = 2 * pi * r
+
+-- Double 表示双精度的浮点数
+circumference' :: Float -> Float
+circumference' r = 2 * pi * r
+
+-- Bool 表示布尔值，它只有两种值：True 和 False
+
+-- Char 表示一个字元。一个字元由单引号括起
+-- 一组字元的 List 即为字串
+removeNoeUppercase :: [Char] -> [Char]
+removeNoeUppercase st = [c | c <- st, c `elem` ['A' .. 'Z']]
+
+
+
 main = do
     print (removeNoeUppercase "HelloWorld")
     print (addThree 1 2 3)
@@ -34,29 +61,3 @@ main = do
     -- Floating 仅包含浮点型别 Float 和 Double
     -- fromIntegral 取一个整数做参数并回传一个更加通用的数字
     print (fromIntegral (length [1, 2, 3, 4]) + 3.1)    -- 7.1
-
-
--- Basic Types
-
--- Int 表示整数，范围是 -2147483648 ~ -2147483648 (32 位)
-addThree :: Int -> Int -> Int -> Int
-addThree x y z = x + y + z
-
--- Integer 也表示整数，但它是无界的, 其效率不如 Int
-factorial :: Integer -> Integer
-factorial n = product [1 .. n]
-
--- Float 表示单精度的浮点数
-circumference :: Float -> Float
-circumference r = 2 * pi * r
-
--- Double 表示双精度的浮点数
-circumference' :: Float -> Float
-circumference' r = 2 * pi * r
-
--- Bool 表示布尔值，它只有两种值：True 和 False
-
--- Char 表示一个字元。一个字元由单引号括起
--- 一组字元的 List 即为字串
-removeNoeUppercase :: [Char] -> [Char]
-removeNoeUppercase st = [c | c <- st, c `elem` ['A' .. 'Z']]
