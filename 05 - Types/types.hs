@@ -14,7 +14,7 @@ circumference :: Float -> Float
 circumference r = 2 * pi * r
 
 -- Double 表示双精度的浮点数
-circumference' :: Float -> Float
+circumference' :: Double -> Double
 circumference' r = 2 * pi * r
 
 -- Bool 表示布尔值，它只有两种值：True 和 False
