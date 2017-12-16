@@ -92,6 +92,30 @@ cylinder r h =
 squares :: [Double] -> [Double]
 squares xs = let square x = x * x in [square x | x <- xs]
 
+-- 列表推导式中的 let
+calcBmis' :: [(Double, Double)] -> [Double]
+calcBmis' xs = [bmi | (w, h) <- xs, let bmi = w / h^2]
+
+
+
+-- case 表达式
+-- case <Expression> of
+--      <Pattern> -> <Result>
+--      <Pattern> -> <Result>
+--      ......
+head' :: [a] -> a
+head' xs = case xs of
+    [] -> error "No head for empty list!"
+    (x:_) -> x
+
+-- 函数参数的模式匹配只能在定义时使用
+-- 而 case 表达式的模式匹配可以使用在任何地方
+describeList :: [a] -> String
+describeList ls = "This list is " ++ case ls of
+    [] -> "empty"
+    x:[] -> "a singleton list"
+    _ -> "a long list"
+    ++ "!"
 
 
 main = do
@@ -109,3 +133,6 @@ main = do
     print (calcBmis [(80, 1.8), (50, 1.6), (100, 1.85)])
     print (cylinder 3 5)
     print (squares [1.0, 2.0, 3.0])
+    print (calcBmis' [(80, 1.8), (50, 1.6), (100, 1.85)])
+    print (head' "Hello!")      -- 'H'
+    print (describeList [1])
