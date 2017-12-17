@@ -28,3 +28,4 @@ __[5. Types and TypeClass](https://github.com/HuQingyang/HaskellLearning/blob/ma
 __[6. Function、Pattern Matching、Guard、Let and Case](https://github.com/HuQingyang/HaskellLearning/blob/master/06%20-%20Function/function.hs)__   
 __[7. Recursive](https://github.com/HuQingyang/HaskellLearning/blob/master/07%20-%20Recursive/recursive.hs)__   
 __[8. High-order Function](https://github.com/HuQingyang/HaskellLearning/blob/master/08%20-%20Higher-order%20Function/higherOrderFunction.hs)__   
+__[9. Lambda](https://github.com/HuQingyang/HaskellLearning/blob/master/09%20-%20Lambda/lambda.hs)__   
