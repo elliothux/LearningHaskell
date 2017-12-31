@@ -20,12 +20,13 @@
 
 
 ### Table of Content
-__[1. Hello World](https://github.com/HuQingyang/HaskellLearning/blob/master/01%20-%20HelloWorld/helloworld.hs)__   
-__[2. List](https://github.com/HuQingyang/HaskellLearning/blob/master/02%20-%20List/list.hs)__  
-__[3. Range](https://github.com/HuQingyang/HaskellLearning/blob/master/03%20-%20Range/range.hs)__   
-__[4. Tuple](https://github.com/HuQingyang/HaskellLearning/blob/master/04%20-%20Tuple/tuple.hs)__   
-__[5. Types and TypeClass](https://github.com/HuQingyang/HaskellLearning/blob/master/04%20-%20Type/type.hs)__   
-__[6. Function、Pattern Matching、Guard、Let and Case](https://github.com/HuQingyang/HaskellLearning/blob/master/06%20-%20Function/function.hs)__   
-__[7. Recursive](https://github.com/HuQingyang/HaskellLearning/blob/master/07%20-%20Recursive/recursive.hs)__   
-__[8. High-order Function](https://github.com/HuQingyang/HaskellLearning/blob/master/08%20-%20Higher-order%20Function/higherOrderFunction.hs)__   
-__[9. Lambda](https://github.com/HuQingyang/HaskellLearning/blob/master/09%20-%20Lambda/lambda.hs)__   
+__[01. Hello World](https://github.com/HuQingyang/HaskellLearning/blob/master/01%20-%20HelloWorld/helloworld.hs)__   
+__[02. List](https://github.com/HuQingyang/HaskellLearning/blob/master/02%20-%20List/list.hs)__  
+__[03. Range](https://github.com/HuQingyang/HaskellLearning/blob/master/03%20-%20Range/range.hs)__   
+__[04. Tuple](https://github.com/HuQingyang/HaskellLearning/blob/master/04%20-%20Tuple/tuple.hs)__   
+__[05. Types and TypeClass](https://github.com/HuQingyang/HaskellLearning/blob/master/05%20-%20Types/types.hs)__   
+__[06. Function、Pattern Matching、Guard、Let and Case](https://github.com/HuQingyang/HaskellLearning/blob/master/06%20-%20Function/function.hs)__   
+__[07. Recursive](https://github.com/HuQingyang/HaskellLearning/blob/master/07%20-%20Recursive/recursive.hs)__   
+__[08. High-order Function](https://github.com/HuQingyang/HaskellLearning/blob/master/08%20-%20Higher-order%20Function/higherOrderFunction.hs)__   
+__[09. Lambda](https://github.com/HuQingyang/HaskellLearning/blob/master/09%20-%20Lambda/lambda.hs)__   
+__[10. Function Application and Function Composition](https://github.com/HuQingyang/HaskellLearning/blob/master/10%20-%20Function%20Application%20and%20Function%20Composition/functionApplication.hs)__
