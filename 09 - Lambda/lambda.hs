@@ -63,7 +63,7 @@ scanMax :: (Ord a) => [a] -> [a]
 scanMax = scanl1 (\acc x -> if x > acc then x else acc)
 
 -- 将自然数的平方和依次相加, 会在何时超过 1000?
-sqrtNums :: Integer
+sqrtNums :: [Integer]
 sqrtNums = takeWhile (<1000) (scanl1 (+) [x^2 | x <- [0..]])
 
 
