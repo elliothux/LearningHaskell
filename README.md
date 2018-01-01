@@ -30,3 +30,4 @@ __[07. Recursive](https://github.com/HuQingyang/HaskellLearning/blob/master/07%2
 __[08. High-order Function](https://github.com/HuQingyang/HaskellLearning/blob/master/08%20-%20Higher-order%20Function/higherOrderFunction.hs)__   
 __[09. Lambda](https://github.com/HuQingyang/HaskellLearning/blob/master/09%20-%20Lambda/lambda.hs)__   
 __[10. Function Application and Function Composition](https://github.com/HuQingyang/HaskellLearning/blob/master/10%20-%20Function%20Application%20and%20Function%20Composition/functionApplication.hs)__
+__[11. Modules](https://github.com/HuQingyang/HaskellLearning/tree/master/11%20-%20Modules)__
