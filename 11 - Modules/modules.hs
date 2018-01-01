@@ -10,7 +10,10 @@
 
 -- 除了 hiding, 还可以使用 qualified import 避免命名冲突
 import qualified Data.Map as M
+import qualified Geometry.Cuboid as Cuboid
+import qualified Geometry.Sphere as Sphere
+import qualified Geometry.Cube as Cube
 
 
 main = do
-    print "Hello"
+    print (Cuboid.area 1.0 2.0 3.0)
