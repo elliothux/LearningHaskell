@@ -1,10 +1,12 @@
 
+-- 创建子模块
 module Geometry.Cube (
     volume,
     area
 ) where
 
 
+-- 导入子模块
 import qualified Geometry.Cuboid as Cuboid
 
 

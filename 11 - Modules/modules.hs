@@ -16,4 +16,7 @@ import qualified Geometry.Cube as Cube
 
 
 main = do
-    print (Cuboid.area 1.0 2.0 3.0)
+    print (Cuboid.area 1.0 2.0 3.0)     -- 22.0
+    print (Cube.volume 2)               -- 8.0
+    print (Sphere.area 2)
+    print (Sphere.volume 3)
