@@ -83,3 +83,14 @@ main = do
     print $ let w = "Hello" in zip (tails w) (inits w)  -- [("Hello",""),("ello","H"),("llo","He"),("lo","Hel"),("o","Hell"),("","Hello")]
     print $ search "Hello" "Hello World!"
 
+    -- isInfixOf 从一个 List 中搜索一个子 List, 若该 List 包含子 List, 则返回 True
+    print $ "cat" `isInfixOf` "I'm a cat."      -- True
+    print $ "Cat" `isInfixOf` "I'm a cat."      -- False
+
+    -- isPrefixOf 与 isSuffixOf 分别检查一个 List 是否以某子 List 开头或者结尾
+    print $ "Hey" `isPrefixOf` "Hey there"      -- True
+    print $ "there" `isPrefixOf` "Hey there"    -- False
+    print $ "Hey" `isSuffixOf` "Hey there"      -- False
+
+
+
