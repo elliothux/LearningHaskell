@@ -96,9 +96,49 @@ main = do
     -- elem 与 notElem 检查一个 List 是否包含某元素
     print $ 'o' `elem` "Aloha!"     -- True
     print $ 'p' `elem` "Aloha!"     -- False
+    -- elemIndex 与 elem 相似, 它'可能'(Maybe)返回我们找的元素的索引
+    print $ ' ' `elemIndex` "Hello World!"  -- Just 5
+    print $ ' ' `elemIndex` "Aloha!"        -- Nothing
+    -- elemIndices 与 elemIndex 相似, 不过它返回的是 List
+    print $ 'o' `elemIndices` "Hello World!"    -- [4, 7]
 
     -- partition 取一个限制条件和 List 作参数, 返回两个 List
     -- 第一个 List 中包含所有符合条件的元素, 而第二个 List 中包含余下的
     print $ partition (`elem` ['A'..'Z']) "Hello World!"    -- ("HW","ello orld!")
+
+    -- find 取一个 List 和限制条件作参数, 并返回首个符合该条件的元素, 而这个元素是个 Maybe 值
+    print $ find (> 4) [1,2,3,4,5,6]        -- Just 5
+    print $ find (< 1) [1,2,3,4,5,6]        -- Nothing
+    -- findIndex 与 find 相似, 但它返回的是可能存在的首个符合该条件元素的索引
+    print $ findIndex (> 4) [3, 4, 5, 6]        -- Just 2
+    -- findIndices 会返回所有符合条件的索引
+    print $ findIndices (> 4) [3, 4, 5, 6]      -- [2, 3]
+
+    -- lines 取一个字串作参数, 并返回由其中的每一行组成的 List
+    print $ lines "Hello\nWorld!"       -- ["Hello","World!"]
+    -- unlines 是 lines 的反函数, 它取一组字串的 List, 并将其通过 '\n' 合并到一块
+    print $ unlines ["Hello","World!"]  -- "Hello\nWorld!\n"
+
+    -- words 和 unwords 可以把一个字串分为一组单词或执行相反的操作
+    print $ words "How are you"             -- ["How","are","you"]
+    print $ unwords ["How","are","you"]     -- "How are you"
+
+    -- nub 可以将一个 List 中的重复元素全部筛掉
+    print $ nub [3, 1, 4, 8, 3, 1]      -- [3,1,4,8]
+
+    -- delete 取一个元素和 List 作参数, 会删掉该 List 中首次出现的这一元素
+    print $ delete 'l' "Hello!"     -- "Helo!"
+
+    -- \\ 表示 List 的差集操作, 它会从左边 List 中的元素扣除存在于右边 List 中的元素一次
+    print $ [1..5] \\ [2, 5, 9]     -- [1, 3, 4]
+    -- union 返回两个 List 的并集, 它遍历第二个 List, 若存在某元素不属于第一个 List，则追加到第一个 List
+    print $ "Hey man!" `union` "Hey what's up?"     -- "Hey man!wht'sup?"
+    -- intersect 相当于集合的交集, 它返回两个 List 的相同部分
+    print $ "Hey man!" `intersect` "Hey what's up?" -- "Hey a"
+
+    -- insert 可以将一个元素插入一个可排序的 List, 并将其置于首个大于等于它的元素之前
+    -- 如果使用 insert 来给一个排过序的 List 插入元素, 返回的结果依然是排序的.
+    print $ 5 `insert` [2, 3, 4, 6, 7]      -- [2,3,4,5,6,7]
+    print $ 5 `insert` [7, 6, 4, 3, 2]      -- [5,7,6,4,3,2]
 
 
