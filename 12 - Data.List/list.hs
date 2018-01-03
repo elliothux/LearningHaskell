@@ -91,6 +91,14 @@ main = do
     print $ "Hey" `isPrefixOf` "Hey there"      -- True
     print $ "there" `isPrefixOf` "Hey there"    -- False
     print $ "Hey" `isSuffixOf` "Hey there"      -- False
+    print $ "there" `isSuffixOf` "Hey there"    -- True
 
+    -- elem 与 notElem 检查一个 List 是否包含某元素
+    print $ 'o' `elem` "Aloha!"     -- True
+    print $ 'p' `elem` "Aloha!"     -- False
+
+    -- partition 取一个限制条件和 List 作参数, 返回两个 List
+    -- 第一个 List 中包含所有符合条件的元素, 而第二个 List 中包含余下的
+    print $ partition (`elem` ['A'..'Z']) "Hello World!"    -- ("HW","ello orld!")
 
 
